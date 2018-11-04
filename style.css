@@ -1,0 +1,224 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	width:100%;
+}
+section{
+	padding:25px;
+
+}
+h2{
+	font-size: 1.35em;
+	padding: 10px 10px 25px;
+	text-decoration:underline;
+}
+input, textarea, button{
+	background-color: #06d8c5;
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 13px;
+    margin-bottom: 10px;
+	width:225px;
+}
+.width_50{
+	width:50%;
+	float:left;
+}
+/* === My Header Part === */
+header{
+	padding:2px 10px;
+}
+#company{
+	overflow:hidden;
+}
+#company img{
+	float:left;
+	padding-right:20px;
+	padding-bottom:2px;
+	width: 50px;
+    height: 80px;
+}
+#company h1{
+	color:blue;
+	margin-top: 20px;
+    margin-left: 30%;
+}
+
+#main_menu{
+	overflow:hidden;
+}
+#main_menu ul li{
+	list-style:none;
+	float:left;
+	padding:15px 10px;
+	background-color:white;
+	margin:5px 10px 5px 0;
+}
+/* === My Slider Part === */
+#slider{
+	padding:0;
+	position:relative;
+}
+#slider img{
+	width:100%;
+	display: block;
+}
+#slider .slider_content{
+	position:absolute;
+	top:100px;
+	left:40px;
+}
+
+/* === My Services Part === */
+#my_service{
+	background-color:gray; 
+	overflow:hidden;
+}
+.service{
+	background-color:white;
+	padding:15px;
+	width:28%;
+	float:left;
+	margin-right:5px;
+	text-align:center;
+	
+}
+.service ul{
+	background-color:#b19ae8;
+	padding:10px;
+}
+.service ul li{
+	list-style:none;
+	padding:10px 0;
+	border-bottom:1px solid red;
+}
+.service ul li:first-child{
+	padding:25px 0;
+	font-weight:bold;
+}
+.service ul li:last-child{
+	border:0;
+}
+.service ul li:hover{
+	background-color:white;
+}
+
+/* ==== My Details == */
+#bio_table{
+	border:2px solid white;
+	padding:5px;
+	border-spacing: 10px;
+	box-shadow: 1px 1px 15px black;
+}
+#bio_table tr:nth-child(odd){
+	background-color:gray;
+	
+}
+#bio_table tr:nth-child(even){
+	background-color:white;
+}
+#bio_table tr td{
+	border:1px solid white;
+	padding:5px;
+}
+
+/* ==== Gallery == */
+#gallery{
+	background-color:gray;
+	overflow:hidden;
+}
+#gallery img{
+	width:100%;
+	display:block;
+	height:200px;
+}
+.gallery_box{
+	position:relative;
+	width:23%;
+	float:left;
+	margin:5px;
+}
+.gallery_content{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:none;
+}
+.gallery_box:hover .gallery_content{
+	display:block;
+}
+.gallery_content:hover{
+	background-color:#1f024078;
+}
+.gallery_content a{
+	position:absolute;
+	top:45%;
+	left:40%;
+	color:white;
+	background-color:#8f26ef;
+	padding:5px;
+	text-decoration:none;
+}
+
+/* ==== Scroll Top ==== */
+
+#scroll_top{
+	background-color:yellow;
+	height:25px;
+	width:25px;
+	font-size:24px;
+	color:red;
+	text-align:center;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	border-radius:50%;
+	padding-top:5px;
+	font-weight:bold;
+	box-shadow:0px 0px 5px 2px black;
+	cursor:pointer;
+	display:none;
+}
+#scroll_top span{
+	padding:0;
+}
+
+
+/* -- =============== 
+=== Device width ====
+===================== --*/
+
+@media only screen and (max-width:500px){
+	.service{
+		width:90%;
+		margin-bottom:5px;
+	}
+	.gallery_box{
+		width:90%;
+	}
+	.width_50{
+		width:100%;
+		margin-bottom:10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

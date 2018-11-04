@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="logo.png" type="image/logo">
+		<title>Md. Sharif Ullah Sarkar</title>
+		
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery-3.3.1.js"></script>
+<style>
+
+</style>
+	</head>
+	<body>
+		<header style="background-color:#ff9800;">
+			<div id="company"><!-- logo & company Name -->
+				<img src="logo.png" alt="logo">
+				<h1>hello Md. Sharif Ullah Sarkar</h1>
+			</div>
+			<nav id="main_menu"><!-- Menu List -->
+				<ul>
+					<li><a href="index.html" >Home</a></li>
+					<li>About Us</li>
+					<li>Our Project</li>
+					<li>Our Services</li>
+					<li><a href="registration.html" >Registration</a></li>
+					<li><a href="slider.jpg" target="_blank" onclick="window.alert('do you want to download cv?')" >Download CV</a></li>
+					<li>Contact Us</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- ========= main Content Area ========== -->
+		<section>
+			<button id="btn_hide" >Hide</button>
+			<button id="btn_show" >Show</button>
+			<button id="btn_all" >All</button><br>
+			
+			<button id="btn_slideup" >Slide Up</button>
+			<button id="btn_slidedown" >Slide Down</button>
+			<button id="btn_slideall" >Slide All</button><br>
+			<div class="hide_div" style="width:200px; height:200px; background-color:blue; color:white;">
+				hide this box..
+				jaduuuuuuuuuu..
+			</div>
+		</section>
+		<!-- ======= main Content Area End ======== -->
+		<footer style="background-color:darkblue; color:white;padding:5px;">
+			<p style="background-color:blue;padding: 15px; text-align:center;">&copy;2018- All rights resurved by <i><b>Md.Sharif Ullah Sarkar.. </b></i> h<sup>2</sup>a<sub>2</sub></p>
+		</footer>
+	
+	<script>
+		
+		$(document).ready(function(){
+		
+			/***
+			*Box Sliding	
+			***/
+			$('#btn_slideup').click(function(){
+				$('.hide_div').slideUp(5000);
+			});
+			$('#btn_slidedown').click(function(){
+				$('.hide_div').slideDown(5000);
+			});
+			$('#btn_slideall').click(function(){
+				$('.hide_div').slideToggle(5000);
+			});
+			
+			
+						// Box Hide
+			$('#btn_hide').click(function(){
+				$('.hide_div').hide();
+				
+			});
+			
+			$('#btn_show').click(function(){
+				$('.hide_div').show();
+			});
+			
+			$('#btn_all').click(function(){
+				$('.hide_div').toggle();
+			});
+		
+		
+		})
+			
+		
+	</script>
+	
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
